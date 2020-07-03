@@ -1,0 +1,377 @@
+                                           DOCUMENTATION [NUMBER_2] OF CIL PROJECT 
+                
+Project is made in Codeigniter Framework which basically contains:-
+1.View folder(contains files for user interface).
+2.Controllers(contains files which connects user interfaced files to backend files by calling functions).
+3.Models(contains files which are linked through database directly).
+
+Now, In our project View folder,Controllers folder,Models folder which are sub-folder of application folder, are containing files 
+related to their jobs and below there is brief description:-
+
+
+
+1. CONTROLLERS FILES which are in controllers folder and below are the files which this folder contains:-
+    File 1:- Allmines.php
+    Functions: __construct()
+	       index()
+	       add_allmine()
+	       save_allmine()
+	       edit_allmine(parameter)
+	       update_allmine()
+               select_delete_allmine()
+               delete_allmine(parameter)
+               mixed_mines()
+    File 2:- Area.php
+    Functions: _construct()
+	       index()
+	       add_area()
+	       save_area()
+	       edit_area(parameter)
+	       update_area()
+               select_delete_area()
+               delete_area(parameter)
+    File 3:- Cadre.php
+    Functions: _construct()
+	       index()
+	       add_cad()
+	       save_cad()
+	       edit_cad(parameter)
+	       update_cad()
+               select_delete_cad()
+               delete_cad(parameter)
+    File 4:- Departments.php
+        Functions: _construct()
+	           index()
+	           add_dept()
+	           save_dept()
+	           edit_dept(parameter)
+	           update_dept()
+                   select_delete_dept()
+                   delete_dept(parameter)
+    File 5:- Login.php
+        Functions: _construct()
+                   index()
+    File 6:- Mines.php
+        Functions: _construct()
+                   index()
+                   add_mine()
+                   save_mine()
+                   submines_list(parameter)
+                   add_submine(parameter)
+                   save_submine()
+                   show_submineNdept()
+                   add_std_data()
+                   save_std_data()
+                   edit_mine(parameter)
+                   edit_submine(parameter)
+                   edit_submine2(parameters)
+                   update_submines()
+                   all_submines(parameters)
+    File 7:- Pages.php
+        Functions: _construct()
+                   mine_mcode()
+                   mine_mcode_mixed()
+                   match_data()
+                   get_match_data()
+                   fetch_area()
+                   fetch_subarea()
+                   fetch_mines()
+                   fetch_minetype()
+                   fetch_year_id()
+                   about_us()
+                   select_edit_standard_data()
+                   edit_standard_data(parameter)
+                   update_standard_data()
+                   designation()
+                   add_grade()
+                   save_grade()
+                   select_edit_grade()
+                   edit_grade(parameter)
+                   update_grade()
+                   select_delete_grade()
+                   delete_grade(parameter)
+                   entry_data(parameter)
+                   existing_particular_mine()
+                   existing_subarea_wise()
+                   existing_subarea_office()
+                   existing_area_wise()
+                   existing_area_office()
+	           existing_subsidiary_wise()
+                   existing_subsidiary_hq()
+                   existing_CIL_hq()
+                   standard_CIL_hq()
+                   get_existing_for_mine()
+                   get_existing_for_subarea()
+                   get_existing_for_subarea_office()
+                   get_existing_for_area()
+                   get_existing_for_area_office()
+                   get_existing_for_subsidiary()
+                   get_existing_for_subsidiary_hq()
+                   get_existing_for_CIL_hq()
+                   get_standard_for_CIL_hq()
+                   get_existing_for_CIL()
+                   get_standard_for_CIL()
+                   standard_data()
+                   mine_wise_compare_data()
+                   subarea_wise_compare_data()
+                   subarea_office_compare_data()
+                   area_wise_compare_data()
+                   area_office_compare_data()
+                   subsidiary_wise_compare_data()
+                   subsidiary_hq_compare_data()
+                   get_compare_for_mine()
+                   get_compare_for_subarea()
+                   get_compare_subarea_office()
+                   get_compare_for_area()
+                   get_compare_for_area_office()
+                   get_compare_for_subsidiary()
+                   get_compare_for_subsidiary_hq()
+                   subarea_wise_standard_data()
+                   subarea_office_standard_data()
+                   area_wise_standard_data()
+                   area_office_standard_data()
+                   subsidiary_wise_standard_data()
+                   subsidiary_hq_standard_data()
+                   CIL_hq_standard_data()
+                   select_mines_for_subarea(parameter)
+                   select_office_for_subarea(parameter)
+                   select_mines_for_area(parameter)
+                   select_office_for_area(parameter)
+                   select_mines_for_subsidiary(parameter)
+                   select_hq_for_subsidiary(parameter)
+                   get_standard_data(parameter)
+                   get_filter_standard_data()
+                   finalize()
+                   print_report()
+                   logout()
+                   importcsv()
+                   importcsv_dynamic()
+                   import_CIL_hq_manpower()
+                   import_subsidiary_hq_manpower()
+                   import_area_office_manpower()
+                   import_RI_manpower()
+                   import_subarea_office_manpower()
+                   import_CIL_hq_existingmanpower()
+                   import_subsidiary_hq_existingmanpower()
+                   import_area_office_existingmanpower()
+                   import_subarea_office_existingmanpower()
+                   import_existing_manpower()
+                   import_mine_csv()    
+                   import_mine_mixed_csv()
+                   import_area_csv()
+                   import_subarea_csv()
+                   department_cadre_excel()
+                   excel()
+                   excelfilter()
+                   excel_subarea_wise()
+                   excel_area_wise()
+                   excel_subsidiary_wise()
+                   std_data_excel_format()
+                   std_data_dynamic_excel_format()
+                   mine_data_excel_format()
+                   area_excel_format()
+                   subarea_excel_format()
+                   existing_CIL()
+                   CIL_standard_data()
+                   upload_CIL_hq_existing_data()
+                   upload_subsidiary_hq_existing_data()
+                   upload_area_office_existing_data()
+                   upload_subarea_office_existing_data()
+                   upload_existing_data()
+                   upload_standard_data()
+                   upload_standard_dynamic_data()
+                   upload_CIL_hq_standard_data()
+                   upload_subsidiary_hq_standard_data()
+                   upload_area_office_standard_data()
+                   upload_RI_standard_data()
+                   upload_subarea_office_standard_data()
+                   upload_manually_std_dynamic_data()
+                   save_std_dynamic_data()
+                   fetch_lower_lim()
+                   fetch_upper_lim()
+    File 8:- Subarea.php
+        Functions: _construct()
+                   index()
+                   add_subarea()
+                   save_subarea()
+                   edit_subarea(parameter)
+                   update_subarea()
+                   select_delete_subarea()
+                   delete_subarea(parameter)
+    File 9:- Subsidiary.php
+        Functions: _construct()
+                   index()
+                   add_subsidiary()
+                   save_subsidiary()
+                   edit_subsidiary(parameter)
+                   update_subsidiary()
+                   select_delete_sub()
+                   delete_sub(paramter)
+    File 10:- Welcome.php
+        Functions: index()
+
+2. MODELS FILES which are in pages sub-folder in models folder and below are the files which are in this folder:-
+    File 1:- Model_allmines.php
+    Functions: all_allmines();
+               all_allmines_mixed();
+               mine_name(parameter);
+               insert_data(parameters);
+               update_subsidiary(parameters);
+               delete_allmine(parameter);
+    File 2:- Model_area.php
+    Functions: all_area();
+               area_name(parameter);
+               insert_data(parameters);
+               update_area(parameters);
+               delete_area(parameter);
+    File 3:- Model_cadre.php
+    Functions: all_cadre();
+               cad_name(parameter);
+               insert_data(parameters);
+               update_cad(parameters);
+               delete_cad(parameter);
+    File 4:- Model_departments.php
+    Functions: create_department();
+               deparments();
+               dept_name(parameter);
+               insert_data(parameters);
+               update_dept(parameters);
+               delete_dept(parameter);
+    File 5:- Model_designation.php
+    Functions:- create_designation();
+                all_grade();
+                insert_data(parameters);
+                prev_grade(parameter);
+                update_data_desig(parameter);
+                delete_grade(parameter);
+                all_mines();
+                get_submine_type(parameters);
+                get_submine_type_data(parameter);
+                get_mine_mcode();
+                get_mine_mcode_mixed();
+                checkCredentials(parameters);
+                registerUser();
+                get_values();
+                get_home_table();
+                get_compare_for_mine();
+                get_compare_for_subarea();
+                get_compare_for_subarea_office();
+                get_compare_for_area();
+                get_compare_for_area_office();
+                get_compare_for_subsidiary();
+                get_compare_for_subsidiary_hq();
+                get_existing_for_mine();
+                get_existing_for_subarea();
+                get_existing_for_subarea_office();
+                get_existing_for_area();
+                get_existing_for_area_office();
+                get_existing_for_subsidiary();
+                get_existing_for_subsidiary_hq();
+                get_existing_for_CIL();
+                get_existing_for_CIL_hq();
+                get_standard_for_CIL();
+                get_standard_for_CIL_hq();
+                get_mine_for_subarea();
+                get_office_for_subarea();
+                get_mine_for_area();
+                get_office_for_area();
+                get_mine_for_subsidiary();
+                get_hq_for_subsidiary();
+                prev_standard_data(parameter);
+                update_data_standard(parameter);
+                get_filter_values(parameters);
+                get_std_values(parameters);
+                redirectUser();
+                get_value_to_match(parameters);
+                get_department_from_code(parameter);
+                get_minetype_from_code(parameter);
+                get_subsidiary(parameter);
+                get_area(parameter);
+                get_subarea(parameter);
+                get_mine(parameter);
+                get_production(parameters);
+                get_year(parameter);
+                get_minetype(parameter);
+                get_department_for_excel();
+                get_cadre_for_excel();
+                get_grade_for_excel();
+                get_values_for_excel(parameters);
+                get_values_for_excel_filter(parameters);
+                insertcsv(parameter);
+                insertcsv_dynamic(parameter);
+                insert_CIL_hq(parameter);
+                insert_subsidiary_hq(parameter);
+                insert_area_office(parameter);
+                insert_RI(parameter);
+                insert_subarea_office(parameter);
+                get_dept_std_import(parameter);
+                get_cadre_std_import(parameter);
+                get_grade_std_import(parameters);
+                insert_mine_csv(parameter);
+                insert_mine_mixed_csv(parameter);
+                insert_area_csv(parameter);
+                insert_subarea_csv(parameter);
+                insert_CIL_hq_existing_manpower(parameter);
+                insert_subsidiary_hq_existing_manpower(parameter);
+                insert_area_office_existing_manpower(parameter);
+                insert_subarea_office_existing_manpower(parameter);
+                insert_existing_manpower(parameter);
+                get_subsidiary_import(parameter);
+                get_area_import(parameter);
+                get_subarea_import(parameter);
+                get_minetype_import(parameter);
+                get_year_import(parameter);
+                fetch_mineid(parameter);
+                fetch_year();
+                fetch_minetype();
+                fetch_subsidiary();
+                fetch_area(parameter);
+                fetch_subarea(parameter);
+                fetch_year_id_new(parameter);
+                fetch_mines(parameter);
+                fetch_minetype_new(parameter);
+                fetch_lower_lim(parameter);
+                fetch_upper_lim(parameter);
+                fetch_mcode(parameters);
+                all_year();
+                all_minetype();
+                all_cadre();
+                insert_std_dynamic_data(parameters);
+    File 6:- Model_mines.php
+    Functions: all_mines();
+               insert_data(parameters);
+               get_mine_id(parameter);
+               submines(parameter);
+               get_mine_cat(parameter);
+               mine_id(parameter);
+               get_std_data(parameters);
+               get_cadre(parameter);
+               get_grade(parameter);
+               get_norm(parameter);
+               get_minecategory(parameter);
+               get_minesubcategory(parameter);
+               get_department(parameter);
+               department();
+               cadre();
+               grade();
+               norm();
+               delete_std_data(parameter);
+               get_mine(parameter);
+               update_submine(parameter);
+               get_cad_id(parameter);
+               get_grade_id(parameter);
+               std_data_by_mine(parameter);
+               std_data_by_submine(parameter);
+    File 7:- Model_subarea.php
+    Functions: all_subarea();
+               subarea_name(parameter);
+               insert_data(parameters);
+               update_subarea(parameters);
+               delete_subarea(parameters);
+    File 8:- Model_subsidiary.php
+    Functions: all_subsidiary();
+               subsidiary_name(parameter);
+               insert_data(parameters);
+               update_subsidiary(parameters);
+               delete_sub(parameters);
+
